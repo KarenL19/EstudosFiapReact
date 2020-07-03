@@ -1,19 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, SafeAreaView} from 'react-native';
 import { render } from 'react-dom';
 
 import PrimeiroComponente from './src/components/primeiroComponente';
+import ParOuImpar from './src/components/ParOuImpar'
 
 
 export default function App() {
  
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <StatusBar 
+      barStyle= "dark-content"
+      backgroundColor="transparent"
+      translucent
+      />
       <Text>hello world</Text>
       <PrimeiroComponente/>
-      <StatusBar style="auto" />
-    </View>
+      <ParOuImpar numero={4}/>
+      
+    </SafeAreaView>
   );
 }
 
@@ -24,5 +30,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 500
   },
 });
