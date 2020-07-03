@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, StatusBar, SafeAreaView} from 'react-native';
 import { render } from 'react-dom';
 
 import PrimeiroComponente from './src/components/primeiroComponente';
-import ParOuImpar from './src/components/ParOuImpar'
+import ParOuImpar from './src/components/ParOuImpar';
+import Contador from './src/components/Contador';
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <Text>hello world</Text>
       <PrimeiroComponente/>
       <ParOuImpar numero={4}/>
+      <Contador/>
       
     </SafeAreaView>
   );
