@@ -6,9 +6,9 @@ export default class ParOuImpar extends Component{
         return(
             <View>
                 {
-                    this.props.numero % 2 === 0 ?
-                    <Text>Par</Text>
-                    : <Text>Impar</Text>
+                    this.props.route.params.numero % 2 === 0 ?
+                    <Text style={{fontSize: 40}}>Par</Text>
+                    : <Text style={{fontSize: 40}}>Impar</Text>
                 }
             </View>
         );

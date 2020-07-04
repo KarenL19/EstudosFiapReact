@@ -1,37 +1,25 @@
+// Importação do node modulos - dependencia do packege.json
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar, SafeAreaView} from 'react-native';
-import { render } from 'react-dom';
+import {StatusBar} from 'react-native';
 
-import PrimeiroComponente from './src/components/primeiroComponente';
-import ParOuImpar from './src/components/ParOuImpar';
-import Contador from './src/components/Contador';
+import Rountes from './src/routes'
 
 
 export default function App() {
  
   return (
-    <SafeAreaView style={styles.container}>
+    <>
       <StatusBar 
       barStyle= "dark-content"
       backgroundColor="transparent"
       translucent
       />
-      <Text>hello world</Text>
-      <PrimeiroComponente/>
-      <ParOuImpar numero={4}/>
-      <Contador/>
       
-    </SafeAreaView>
+      <Rountes/>
+      
+    </>
   );
 }
 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom: 500
-  },
-});
+
