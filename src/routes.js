@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 
+
 //Importar todos os componetes, o routes vai cuidar da navegação, por isso ele irá gerenciar os componentes
 import PrimeiroComponente from './components/primeiroComponente';
 import ParOuImpar from './components/ParOuImpar';
@@ -13,7 +14,7 @@ import Contador from './components/Contador';
 const AppStack = createStackNavigator();
 
 export default class Routes extends Component{
-render() {
+    render() {
     return(
         <NavigationContainer>
 
